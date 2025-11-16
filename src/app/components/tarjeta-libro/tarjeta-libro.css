@@ -31,17 +31,17 @@ tr:hover {
 }
 
 .completada {
-  text-decoration: line-through; /* Tachar tareas completadas */
-  color: green; /* Color para tareas completadas */
+  text-decoration: line-through; /* Tacha las tareas completadas */
+  color: green; /* Color para las tareas completadas */
 }
 
 .no-completada {
-  color: black; /* Color normal para tareas no completadas */
+  color: black; /* Color normal para las tareas no completadas */
 }
 
 .proxima {
-  color: orange; /* Resaltar tareas próximas */
-  font-weight: bold; /* Resaltar tareas próximas */
+  color: orange; /* Resaltar las tareas próximas */
+  font-weight: bold; /* Resaltar ls tareas próximas */
 }
 
 button {
@@ -58,3 +58,4 @@ button:hover {
   font-weight: bold; /* Negrita para mayor visibilidad */
   margin-left: 10px; /* Espacio a la izquierda del mensaje */
 }
+
