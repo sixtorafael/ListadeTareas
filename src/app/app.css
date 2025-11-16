@@ -1,0 +1,90 @@
+/* Estilo general del contenedor */
+.container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrar el contenedor */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+}
+
+/* Estilo del encabezado */
+h2 {
+    text-align: center; /* Centrar el texto */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo del contenedor de entrada */
+.input-container {
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo de los inputs */
+input[type="text"], input[type="date"] {
+    flex: 1; /* Tomar el espacio disponible */
+    padding: 10px; /* Espaciado interno */
+    margin-right: 10px; /* Espacio entre inputs */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px 15px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo del mensaje de advertencia */
+.advertencia {
+    background-color: #ffcccc; /* Color de fondo para advertencia */
+    border: 1px solid #ff0000; /* Borde rojo */
+    color: #a33; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo de las celdas de la tabla */
+th, td {
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    border-bottom: 1px solid #ddd; /* Borde inferior */
+}
+
+/* Estilo para filas completadas */
+.completada {
+    text-decoration: line-through; /* Tachar texto completado */
+    color: #888; /* Color gris */
+}
+
+/* Estilo para filas no completadas */
+.no-completada {
+    background-color: #f2f2f2; /* Color de fondo claro */
+}
+
+/* Estilo para filas próximas */
+.proxima {
+    background-color: #fff3cd; /* Color de fondo amarillo claro */
+}

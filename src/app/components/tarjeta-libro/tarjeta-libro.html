@@ -1,0 +1,40 @@
+<div class="container">
+  <h2>Lista de Tareas</h2>
+  <div class="input-container">
+    <input [(ngModel)]="nuevaTarea" placeholder="Agregar nueva tarea" />
+    <input [(ngModel)]="nuevaFecha" type="date" placeholder="Fecha de la tarea" />
+    <button (click)="agregarTarea()">{{ tareaEditando ? 'Actualizar' : 'Agregar' }}</button>
+  </div>
+
+  <!-- Mensaje de advertencia con un ID -->
+  <div id="advertencia" *ngIf="mostrarAdvertencia" class="advertencia" style="color: red; margin-top: 10px;">
+    FALTA CAMPOS POR COMPLETAR
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Seleccionar</th>
+        <th>Tarea</th>
+        <th>Fecha</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tarea of tareas" 
+          [ngClass]="{'completada': tarea.completada, 'no-completada': !tarea.completada, 'proxima': esProxima(tarea) !== null}">
+        <td>
+          <input type="checkbox" [(ngModel)]="tarea.completada" (change)="toggleCompletada(tarea)" />
+        </td>
+        <td>{{ tarea.nombre }}</td>
+        <td>{{ tarea.fecha | date:'shortDate' }}</td>
+        <td>{{ tarea.completada ? 'Completada' : 'Pendiente' }}</td>
+        <td>
+          <button (click)="editarTarea(tarea)">Editar</button>
+          <button (click)="eliminarTarea(tarea)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
